@@ -1,0 +1,63 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "TS Number",
+      "name": "tsNumber",
+      "kind": "Grouping",
+      "description": "Train Set number"
+    },
+    {
+      "displayName": "Values",
+      "name": "values",
+      "kind": "Measure",
+      "description": "Numeric values (WO count, hours, etc.)"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "select": [
+            { "for": { "in": "tsNumber" } },
+            { "for": { "in": "values" } }
+          ],
+          "dataReductionAlgorithm": { "top": { "count": 1000 } }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "tableSettings": {
+      "displayName": "Table Settings",
+      "properties": {
+        "headerColor": {
+          "displayName": "Header Background",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "rowColor1": {
+          "displayName": "Row Color 1",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "rowColor2": {
+          "displayName": "Row Color 2",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": { "numeric": true }
+        }
+      }
+    },
+    "summaryCards": {
+      "displayName": "Summary Cards",
+      "properties": {
+        "showCards": {
+          "displayName": "Show Summary Cards",
+          "type": { "bool": true }
+        }
+      }
+    }
+  },
+  "supportsHighlight": true,
+  "privileges": []
+}
