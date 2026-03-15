@@ -13,9 +13,11 @@
     "powerbi-visuals-api": "~5.3.0"
   },
   "devDependencies": {
-    "powerbi-visuals-tools": "^5.2.2",
-    "typescript": "^4.9.5",
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-powerbi-visuals": "^0.8.1"
+    "eslint-plugin-powerbi-visuals": "^0.8.1",
+    "powerbi-visuals-tools": "^5.2.2",
+    "typescript": "^4.9.5"
   }
 }
